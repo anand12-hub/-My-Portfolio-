@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#web-apps">Web Apps</a>
+            <a href="#mobile-apps">Mobile Apps</a>
+            <a href="#design-work">Design Work</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Category 1: Web Apps -->
+        <section id="web-apps" class="category">
+            <h2>Web Applications</h2>
+            <div class="carousel">
+                <div class="project-card" data-title="E-commerce Platform" data-description="A full-stack e-commerce site built with the MERN stack. Features product listings, a shopping cart, and user authentication." data-tech="React, Node.js, Express, MongoDB" data-image="assets/project-1.jpg">
+                    <img src="assets/project-1.jpg" alt="E-commerce Platform">
+                </div>
+                <div class="project-card" data-title="Task Management App" data-description="A responsive task management application to help users organize their daily tasks efficiently." data-tech="Vue.js, Firebase" data-image="assets/project-2.jpg">
+                    <img src="assets/project-2.jpg" alt="Task Management App">
+                </div>
+                <!-- Add more projects -->
+            </div>
+        </section>
+
+        <!-- Category 2: Mobile Apps -->
+        <section id="mobile-apps" class="category">
+            <h2>Mobile Applications</h2>
+            <div class="carousel">
+                <div class="project-card" data-title="Fitness Tracker App" data-description="A mobile app for tracking workouts and nutrition. Includes real-time progress charts and social sharing." data-tech="React Native, Redux" data-image="assets/project-3.jpg">
+                    <img src="assets/project-3.jpg" alt="Fitness Tracker App">
+                </div>
+                <!-- Add more projects -->
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-image" src="" alt="Project Image">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p><strong>Technologies:</strong> <span id="modal-tech"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
